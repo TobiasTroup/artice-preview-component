@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+$font-stack: Arial, Helvetica, sans-serif;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $font-stack;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+#article__main {
+    border: coral 3px solid;
+
+    #article__drawer {
+
+        // border: blueviolet 3px solid;
+        img {
+            width: 25vw;
+            // border: black 3px solid;
+            border-radius: 10px 0 0 10px;
+        }
+    }
+
+    #article__content {
+        border: greenyellow 3px solid;
+    }
+}
