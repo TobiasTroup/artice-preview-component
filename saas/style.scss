@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
 
-$font-stack: Arial, Helvetica, sans-serif;
+$font-stack: 'Monrope', sans-serif;
 
 * {
     box-sizing: border-box;
@@ -12,18 +12,18 @@ body {
     font-family: $font-stack;
     font-size: 13px;
     background-color: hsl(210, 46%, 95%);
+    height: 100vh;
 }
 
-#article__main {
-    border: coral 3px solid;
+.custom__container {
+    height: 100%;
+}
 
+#article__main {    
     #article__drawer {
-
-        // border: blueviolet 3px solid;
         img {
             width: 350px;
             height: 350px;
-            // border: black 3px solid;
             border-radius: 10px 0 0 10px;
             object-fit: cover;
             object-position: 0 0;
@@ -31,7 +31,8 @@ body {
     }
 
     #article__content {
-        border: greenyellow 3px solid;
+        background-color: white;
+        border-radius: 0 10px 10px 0;
 
         h3 {
             color: hsl(217, 19%, 35%);
@@ -71,31 +72,43 @@ body {
                     border-radius: 50%;
                     border: none;
                 }
-            }
-        }
 
-        #social__media {
-            position: fixed;
-            display: none !important;
-            left: 74em;
-            top: 10em;
-            // background-color: hsl(217, 19%, 35%);
-            background-color: black;
-            border-radius: 10px;
-
-            &-share {
-                text-transform: uppercase;
-                letter-spacing: 5px;
-                padding-left: 35px !important;
-
-                p {
-                    color: white;
-                    opacity: 60%;
+                &:hover .social__media {
+                    visibility: visible;
+                    opacity: 1;
                 }
-            }
 
-            &-pinterist {
-                padding-right: 35px !important;
+                .social__media {
+                    position: absolute;
+                    visibility: hidden;
+                    opacity: 0;
+                    left: 90em;
+                    top: 34em;
+                    background-color: hsl(217, 19%, 35%);
+                    border-radius: 10px;
+
+                    &-share {
+                        text-transform: uppercase;
+                        letter-spacing: 5px;
+                        padding-left: 35px !important;
+
+                        p {
+                            color: white;
+                            opacity: 60%;
+                        }
+                    }
+
+                    &-fb {
+                        top: -50px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    &-pinterist {
+                        padding-right: 35px !important;
+                    }
+                }
+
             }
         }
     }

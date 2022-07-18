@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Frontend Mentor | Article preview component</title>
-</head>
-
-<body>
-    <div class="container-sm">
-        <div id="article__main" class="d-sm-flex justify-content-sm-center p-0">
-            <div id="article__drawer" class="d-sm-flex m-0 p-0">
-                <img src="./img/drawers.jpg" alt="drawer" class="img-fluid">
-            </div>
-            <div id="article__content" class="">
-                <div class="m-4">
-                    <div class="mb-3">
-                        <h3>
-                            Shift the overall look and feel by <br> adding these wonderful touches to <br> furniture in
-                            your home
-                        </h3>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./img/favicon-32x32.png"
+        >
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Frontend Mentor | Article preview component</title>
+    </head>
+    <body>
+        <div class="custom__container d-flex flex-column justify-content-center">
+            <div class="container-sm">
+                <div id="article__main" class="d-sm-flex justify-content-sm-center p-0">
+                    <div id="article__drawer" class="d-sm-flex m-0 p-0">
+                        <img src="./img/drawers.jpg" alt="drawer" class="img-fluid">
                     </div>
-                    <p>
-                        Ever been in a room and felt like something was missing? <br> Perhaps
-                        it felt slightly bare and uninviting. I’ve got some <br> simple tips
+                    <div id="article__content" class="">
+                        <div class="m-4">
+                            <div class="mb-3">
+                                <h3>
+                                    Shift the overall look and feel by
+                                    <br>
+                                    adding these wonderful touches to
+                                    <br>
+                                    furniture in your home
+                                </h3>
+                            </div>
+                            <p>
+                                Ever been in a room and felt like something was missing?
+                                <br>
+                                Perhaps
+                        it felt slightly bare and uninviting. I’ve got some
+                                <br>
+                                simple tips
                         to help you make any room feel complete.
-                    </p>
-                    <div id="personal__info" class="mt-4 d-sm-flex flex-sm-row justify-content-sm-start">
-                        <div class="">
-                            <img src="./img/avatar-michelle.jpg" alt="Avatar Michelle" id="profile">
-                        </div>
-                        <div class="p-0 m-0 ms-3">
-                            <!-- person -->
-                            <h6 class="m-0 mt-2">Michelle Appleton</h6>
-                            <p class="m-0 pt-1">28 Jun 2020</p>
-                        </div>
-                        <figure id="icon__share" width="15" height="13" class="ms-auto mt-2">
-                            <!--arrow -->
-                            <!-- <img src="./img/icon-share.svg" alt="" class=""> -->
-                            <button type="button" class="" data-bs-toggle="popover"
-                            data-bs-content='
-                                <div id="" class="popover" role="tooltip">
-                                    <div class="popover-body" id="">
-                                        share
+                            </p>
+                            <div id="personal__info" class="mt-4 d-sm-flex flex-sm-row justify-content-sm-start">
+                                <div class="">
+                                    <img src="./img/avatar-michelle.jpg" alt="Avatar Michelle" id="profile">
+                                </div>
+                                <div class="p-0 m-0 ms-3">
+                                    <!-- person -->
+                                    <h6 class="m-0 mt-2">Michelle Appleton</h6>
+                                    <p class="m-0 pt-1">28 Jun 2020</p>
+                                </div>
+                                <figure
+                                    id="icon__share"
+                                    width="15"
+                                    height="13"
+                                    class="ms-auto mt-2"
+                                >
+                                    <!-- arrow -->
+                                    <a href="#">
+                                        <img src="./img/icon-share.svg" alt="">
+                                    </a>
+                                    <div class="social__media d-sm-flex p-2 pt-2">
+                                        <div class="px-3 ps-5 social__media-share">
+                                            <p class="pt-2">share</p>
+                                        </div>
+                                        <div class="social__media-fb">
+                                            <img src="./img/icon-facebook.svg" alt="Facebook">
+                                        </div>
+                                        <div class="px-3 social__media-twitter">
+                                            <img src="./img/icon-twitter.svg" alt="Twitter">
+                                        </div>
+                                        <div class="px-3 social__media-pinterist">
+                                            <img src="./img/icon-pinterest.svg" alt="Pinterist">
+                                        </div>
                                     </div>
-                                </div>'
-                            aria-describedby="popover594699" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="top"><img src="./img/icon-share.svg" alt="" class=""></button>
-                        </figure>
-
+                                </figure>
+                            </div>
+                        </div>
                     </div>
-                    <!-- <div id="social__media" class="d-sm-flex p-2 pt-4">
-                        <div class="px-3 ps-5" id="social__media-share">
-                            <p>share</p>
-                        </div>
-                        <div class="px-3" id="social__media-fb">
-                            <img src="./img/icon-facebook.svg" alt="Facebook">
-                        </div>
-                        <div class="px-3" id="social__media-twitter">
-                            <img src="./img/icon-twitter.svg" alt="Twitter">
-                        </div>
-                        <div class="px-3" id="social__media-pinterist">
-                            <img src="./img/icon-pinterest.svg" alt="Pinterist">
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
-    </div>
-    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
-        data-bs-content="And here's some amazing content. It's very engaging. Right?"
-        aria-describedby="popover594699"><img src="./img/icon-share.svg" alt="" class=""></button>
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
-<script>
-    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-</script>
-
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
